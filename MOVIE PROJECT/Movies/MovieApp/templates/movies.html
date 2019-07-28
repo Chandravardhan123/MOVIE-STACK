@@ -1,0 +1,205 @@
+<!DOCTYPE html><html lang="en-US" class="no-js">
+<!-- Mirrored from sequex-dark.egemenerd.com/movies-2-column/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jul 2019 17:17:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link type="text/css" media="all" href="/static/css/autoptimize_cccfcd10bc0056f66bc7be668cc69897.css" rel="stylesheet" />
+<link type="text/css" media="screen" href="/static/css/autoptimize_f9aaab2e3e845be83965552667b5901e.css" rel="stylesheet" />
+<link type="text/css" media="only screen and (max-width: 768px)" href="/static/css/autoptimize_dcb2de333eec7ab4ae31385ed8d6a393.css" rel="stylesheet" />
+<title>Movie &#8211; stack  &#8211;</title><meta name='robots' content='noindex,follow' />
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+
+
+<script type='text/javascript' src='/static/jquery/jqueryb8ff.js?ver=1.12.4'></script> 
+ <script type='text/javascript' src='/static/jquery/bootstrap.mincce7.js?ver=4.0.0'></script> 
+<script type='text/javascript' src='/static/jquery/select2.mincce7.js?ver=4.0.0'></script> 
+</head>
+
+
+
+<title>Movies &#8211; Stack &#8211; </title><meta name='robots' content='noindex,follow' /><link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<body class="page-template page-template-page_template_9 page-template-page_template_9-php page page-id-149 woocommerce-no-js mega-menu-sequex-main-menu sequex">
+<header>
+	<nav id="sequex-main-menu-wrapper" class="navbar navbar-toggleable-md mp-dark navbar-inverse"><div class="container">
+	<a class="navbar-brand" href="/MovieApp/Movie/">
+		<img src="/static/img/logo.jpg" />Movie stack
+	</a>
+			<div class="navbar-toggler collapsed" role="button" data-toggle="collapse" data-target="#sequex-main-menu" aria-controls="sequex-main-menu-wrapper" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> MENU</div>
+			<div id="mega-menu-wrap-sequex-main-menu" class="mega-menu-wrap">
+		
+			<ul id="mega-menu-sequex-main-menu" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js" data-event="hover_intent" data-effect="fade_up" data-effect-speed="200" data-effect-mobile="disabled" data-effect-speed-mobile="200" data-panel-width="#sequex-main-menu-wrapper &gt; .container" data-mobile-force-width="false" data-second-click="close" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="991" data-unbind="true">	
+	
+			<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-261' id='mega-menu-item-261'><a class="mega-menu-link" href="/MovieApp/Movie/" tabindex="0">Movies</a>
+			</li>
+				
+			<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-obndex.html"ject-page mega-align-bottom-left mega-menu-flyout mega-menu-item-261' id='mega-menu-item-261'><a class="mega-menu-link" href="" tabindex="0">Tv Shows</a>
+			</li>
+			<li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-346' id='mega-menu-item-346'><a class="mega-menu-link" href="" tabindex="0">Watch list</a>
+			</li>
+			<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-266' id='mega-menu-item-266'><a class="mega-menu-link" href="" tabindex="0">Celebrities</a>
+			</li>
+			</ul></div></div></nav></header>
+			
+			<main class="sequex-main-container">
+			<div class="sequex-page-title">
+			
+			<div id="sequex-page-title-overlay"></div>
+			<div class="container">
+			<h1>Trending &#8211; Movies</h1>
+			<p>presenting for you...........</p>
+			<div class="sequex-page-right">
+		    <a href="" class="btn btn-danger mb-2 mb-sm-0"   data-toggle="modal" data-target="#sequex-loginform">ADD MOVIE </a>
+			</div>
+	   </div>
+	   </div>
+
+  
+			<div class="container">
+			     
+				<div id="sequex-main-inner">
+					<div class="sequex-page-left">
+					
+
+					 {% for i in result  %}
+						<div class="post-134 movie type-movie status-publish has-post-thumbnail hentry collection-david-o-russell genre-drama genre-comedy genre-romance actor-bradley-cooper actor-jennifer-lawrence actor-robert-de-niro actor-jacki-weaver actor-chris-tucker">
+							<div class="card mp-post horizontal">
+								<div class="card-image"> 
+									<a href="/MovieApp/Movie/">
+										 <img src="/media/{{i.poster}}" /> </a>
+								 </div>
+							<div class="card-stacked">
+								<div class="card-content">
+									<h3 class="card-title">{{i.moviename}}</h3>
+									<p>{{i.plot}}</p>
+	
+								</div>
+							<div class="card-action">
+								<div class="sequex-posts-info-wrapper"><ul class="sequex-posts-info"><li>ACTORS:</li><li>
+								
+									 <a href="/MovieApp/Movie/" title="More movies from Drama">
+								     {% for j  in i.actors  %}
+									   {{j}}
+									 {% endfor %}
+									 </a>		
+									
+								</div>
+								<div class="sequex-page-right">
+								 <a href="/MovieApp/EditMovie/?id={{i.movieid}}"   class="btn btn-info mb-2 mb-sm-0"  >EDIT</a>
+									</div>
+								</div>
+						</div>
+					</div>
+				
+				</div>
+			
+
+			{% endfor %}
+
+		</div>
+    		<div class="sequex-page-right">
+			<div id="search-3" class="widget_search sequex-sidebar-box">
+				<h3 class="sequex-widget-title"><span>Quick Search</span></h3>
+				<form  method="POST" action="/MovieApp/search/">
+				{% csrf_token %}
+				<div class="input-group">
+		 		<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Enter a Movie ..." name="search" /> 
+				 <button type="submit" class="btn btn-primary mb-2 mb-sm-0">Search</button>
+		 	</div>
+			</form>
+			</div>
+
+<div class="modal fade" id="sequex-loginform" tabindex="-1" role="dialog" aria-labelledby="sequex-loginform-label" aria-hidden="true">
+<div class="modal-dialog" role="document"><div class="modal-content">
+<div class="modal-header"><h5 class="modal-title" id="sequex-loginform-label">ADD MOVIE</h5>
+<div class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
+</div>
+</div>
+
+<div class="modal-body">
+<div class="tml tml-login" id="theme-my-login1">
+<form name="loginform"  action='/MovieApp/AddMovie/' method="POST"  enctype="multipart/form-data" >
+{% csrf_token %}
+<p class="tml-user-login-wrap"> 
+<label for="user_login1">Movie Name</label>
+<input type="text" name="moviename" class="input" size="20" />
+</p>
+<p class="tml-user-login-wrap"> 
+<label for="user_login1">Year of Release</label>
+<input type="text" name="year" class="input"  size="20" />
+</p>
+<p class="tml-user-login-wrap"> 
+<label for="user_login1">plot</label>
+<input type="text" name="plot" class="input" size="20" />
+</p>
+<p class="tml-user-login-wrap"> 
+<label for="user_login1">poster</label>
+<input type="file" accept=".jpg" name="image" class="input" required> 
+</p>
+<div id="wpas-tax_actor" class="wpas-tax_actor wpas-taxonomy-field wpas-field">
+<div class="label-container">
+<label for="tax_actor">Actor</label>
+</div>
+<select  name="actors[]" multiple="" class="wpas-multi-select  select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+{% for i in drop %}
+<option value="{{i.actorname}}">{{i.actorname}}</option>
+{% endfor %}
+</select>
+<span class="select2 select2-container select2-container--default select2-container--above" dir="ltr" style="width: 100%;"><span class="selection">
+</div>
+<a href="#"   class="btn btn-warning mb-2 mb-sm-0"   data-toggle="modal" data-target="#sequex-loginform1">ADD ACTORS</a>
+<p>
+ <div id="wpas-submit"  class="wpas-submit wpas-submit-field wpas-field">
+ <input type="submit" class="wpas-submit btn btn-success" value="Submit" >
+ </div>
+ <div id="wpas-reset"  class="wpas-reset wpas-reset-field wpas-field">
+ <input type="reset" class="wpas-reset btn btn-danger" value="Reset" >
+ </div>
+ </p>
+</form>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+ 	
+<div class="modal fade" id="sequex-loginform1" tabindex="-1" role="dialog" aria-labelledby="sequex-loginform-label" aria-hidden="true">
+<div class="modal-dialog" role="document"><div class="modal-content">
+<div class="modal-header"><h5 class="modal-title" id="sequex-loginform-label">ADD ACTOR</h5>
+<div class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
+</div>
+</div>
+<div class="modal-body"><div class="tml tml-login" id="theme-my-login1">
+<form name="loginform"  action='/MovieApp/AddActor/' method="POST" >
+{% csrf_token %}
+<p class="tml-user-login-wrap"> 
+<label for="user_login1">Actor Name</label>
+<input type="text" name="actorname" class="input" value="" size="20" />
+</p>
+<label for="user_login1">Sex</label>
+<label>Male	<input type="checkbox" name="sex" value="male"/></label>
+<label>Female	<input type="checkbox" name="sex" value="female"/></label>
+<p class="tml-user-login-wrap"> 
+<label for="user_login1">date of birth</label>
+<input type="date" name="dob" class="input" value="" size="20" />
+</p>	
+<p class="tml-user-login-wrap"> 
+<label for="user_login1">Bio</label>
+<input type="text" name="bio" class="input" value="" size="20" />
+</p>
+ <div id="wpas-submit"  class="wpas-submit wpas-submit-field wpas-field">
+ <input type="submit" class="wpas-submit btn btn-success" value="Submit" >
+ </div>
+ <div id="wpas-reset"  class="wpas-reset wpas-reset-field wpas-field">
+ <input type="reset" class="wpas-reset btn btn-danger" value="Reset" >
+ </div>
+</form>
+</ul></div>
+</div>
+</div>
+</div>s
+</div>
+
+ </body>
+</html>
