@@ -14,9 +14,10 @@ FUNCTIONALITY:
 3.	‘Listing’ screen should allow user to click on ‘Edit’ and edit all the details of the movie and save it would be nice.
 4. search any movie with movie name.
 
-SOFTWARE REQUIREMENTS:
+SOFTWARE TOOL REQUIREMENTS:
 
 1)PYTHON 2.7 OR HIGHER
 2)DJANGO FRAMEWORK 
 3)MONGODB DATABASE ENVIRONMENT
 4)VISUAL STUDIO EDITOR
+5) FRONT-END: BOOTSTRAP,JAVASCIPT,CSS AND JQUERY
